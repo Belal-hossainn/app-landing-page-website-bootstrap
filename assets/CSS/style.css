@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap');
+
 /* 
 ################# INDEX OF CSS ##############
 1.0: web fonts
@@ -290,10 +292,12 @@ img{
 .home-image{
     text-align: right;
     transform: rotate(-345deg);
+    margin-right: 3.5rem;
+    height: 30rem;
 }
 .home-image img{
-    height: 35rem;
-    animation: float 3s linear infinite;
+    height: 100%;
+        animation: float 3s linear infinite;
 }
 @keyframes float{
     0%, 100%{
@@ -302,4 +306,34 @@ img{
     50%{
         transform: translateY(-3.5rem);
     }
+}
+
+/* ================================
+6.0: Counter CSS
+==================================*/
+.counter_area{
+    padding: 6.875rem 0 1.875rem;
+}
+.single_counter{
+    position: relative;
+}
+.single_counter span{
+    font-size: 2rem;
+    background: var(--bg-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.single_counter::after{
+    position: absolute;
+    content: '';
+    height: 70%;
+    width: 0.063rem;
+    background: var(--bg-black);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    opacity: 0.15;
+}
+.single_counter:last-child::after{
+    display: none;
 }
