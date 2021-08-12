@@ -194,11 +194,12 @@ img{
     width: 30px;
 }
 .name{
-    font-size:1rem;
+    font-size:2rem;
     font-weight: bolder;
-        color: var(--text-black);
-    
-    
+        color: #F83292;
+}
+.name span{
+    color: #814096;
 }
 
 /* on scroll fixed navbar */
@@ -228,7 +229,8 @@ img{
     top: 0;
     background: var(--bg-white);
     margin-top: -6.25rem;
-}
+    }
+    
 .navbar-sticky-on{
     margin-top: 0;
     -webkit-transition: .3s;
@@ -242,7 +244,7 @@ img{
 #home{
     min-height: 700px;
     height: 100%;
-    background: rgba(0, 0, 0, 0 ) url(../images/css-gradient.png) no-repeat scroll left center;
+    background: rgba(0, 0, 0, 0 ) url(../images/home-bg-img.png) no-repeat scroll center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -254,12 +256,12 @@ img{
     font-size: 3.938rem;
     font-weight: 700;
     line-height: 4.938rem;
-    color: var(--text-white);
+    color: #814096;
     padding: 1.063rem 0;
 }
 #home .home_text p{
     font-size: 1rem;
-    color: var(--text-white);
+    color: var(--text-light-black);
     padding: 1.06rem 0;
 }
 #home .home-download-btn{
@@ -294,9 +296,9 @@ img{
 }
 .home-image{
     text-align: right;
-    transform: rotate(-345deg);
+   
     margin-right: 3.5rem;
-    height: 30rem;
+    /* height: 30rem; */
 }
 .home-image img{
     height: 100%;
@@ -497,4 +499,180 @@ img{
 .single_feature:hover{
     color: var(--text-white);
     background: var(--bg-gradient);
+}
+
+/* ==================
+9.0: app-screenshots css
+======================= */
+.app-screen{
+    padding-bottom: 5.313rem;
+}
+.app-screen .swiper-slide{
+    width: 263px !important;
+    height: auto;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 0.5rem;
+}
+.swiper-pagination-bullet{
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #ff007a;
+}
+
+/* ================
+10.0: Pricing CSS
+===================== */
+.single_price{
+    -webkit-box-shadow: 0 0.312rem 0.875rem rgb(45 49 54 / 9%);
+    box-shadow: 0 0.312rem 0.875rem rgb(45 49 54 / 9%);
+    text-align: center;
+    padding: 2.5rem 0;
+    position: relative;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.single_price .month{
+    background: var(--bg-gradient);
+    color: var(--text-white);
+    width: 6.25rem;
+    padding: 0.625rem;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 1.625rem;
+    right: -0.563rem;
+}
+.single_price .month::before{
+    content: '';
+    top: 0.563rem;
+    left: -0.938rem;
+    background: var(--bg-light-pink);
+    position: absolute;
+    transform: rotate(45deg);
+    padding: 0.938rem;
+}
+.single_price .icon_pad{
+    width: 5rem;
+    height: 4.875rem;
+    margin: 2.5rem auto 3.125rem;
+    border-right: dashed 0.313rem var(--bg-light-pink);
+    border-bottom: solid 0.313rem var(--bg-light-pink);
+    border-radius: 100%;
+    padding-left: 0.563rem;
+    padding-top: 0.438rem;
+}
+.single_price .icon_circle{
+    background: var(--bg-light-pink);
+    color: var(--text-white);
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 100%;
+    margin: 0 0 0 -0.063rem;
+    padding-left: 0.625rem;
+    padding: 1.125rem;
+    font-size: 1.625rem;
+}
+.single_price .dollar h2{
+    font-weight: 700;
+    font-size: 2.813rem;
+}
+.single_price .dollar h2 span{
+    font-weight: 600;
+    vertical-align: super;
+    padding-right: 0.125rem;
+    font-size: 1.875rem;
+}
+.single_price li{
+    padding: 0.313rem;
+}
+.single_price:hover{
+    cursor: pointer;
+    margin-top: -0.625rem;
+}
+.active_price{
+    background: var(--bg-gradient);
+    color: var(--text-white);
+}
+.active_price h5,
+.active_price .dollar h2,
+.active_price .doler-sine{
+    color: var(--text-white);
+}
+
+/* ================
+10.0: Contact CSS
+===================== */
+.contact{
+    background: var(--bg-light-gray);
+}
+.contact .info li i{
+    color: var(--text-black);
+    font-size: 1.5rem;
+}
+.contact .info li p a{
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0.75rem 0;
+}
+.contact .form-group{
+    margin-bottom: 1.5rem;
+}
+.contact .form-control{
+    height: 3.75rem;
+    padding: 0.375rem 1.1875rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);
+}
+.contact .textarea{
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.1875rem;
+    border: none;
+    font-size: 1rem;
+    margin-top: 0.3125rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);
+}
+.contact .textarea:focus{
+    outline: none;
+    border: none;
+}
+
+/* ================
+12.0: footer CSS
+===================== */
+.copyright{
+    background: var(--bg-gradient);
+}
+.copyright p,
+.copyright a{
+    color:var(--text-white)
+}
+
+/* ================
+13.0: Scroll top CSS
+===================== */
+#scrollUp{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    height: 2.813rem;
+    width: 2.5rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 500;
+    display: none;
+    -webkit-transition: all o.4s ease-in-out 0s;
+    transition: all o.4s ease-in-out 0s;
+    background: var(--bg-gradient);
+}
+#scrollUp span{
+    line-height: 2.625rem;
+}
+#scrollUp.scrollActive{
+    display: block;
 }

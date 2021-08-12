@@ -22,8 +22,13 @@
   .navbar-brand {
     width: 50%;
   }
-  .navbar-brand img {
-    max-width: 50%;
+  
+  .navbar-brand .name{
+    font-size: 1rem;
+    color: #814096;
+  }
+  .name span{
+    color: var(--text-light-pink);
   }
   .navbar-toggler {
     padding-right: 0;
@@ -52,25 +57,32 @@
   /* ===== HOME =========== */
   #home {
     padding-top: 7rem;
+    background-position:  top right;
+    background-size:inherit;
+    
   }
   #home .row {
     flex-direction: column-reverse;
   }
   #home .home_text {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   #home .home-download-btn {
     justify-content: center;
   }
   .home-image {
     text-align: center;
-    height: 400px;
-    /* margin-bottom: rem; */
+    
   }
   .home-image img {
-    max-width: 60%;
+    max-width: 70%;
     height: 100%;
+  }
+
+  /*  pricing css */
+  .single_price{
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -83,20 +95,22 @@
   /* ==== HOME CSS========  */
   #home {
     padding-top: 5rem;
+    background-position:  top;
+    background-position:contain;
   }
   #home .home_text {
     text-align: center;
   }
   #home .home_text h2 {
-    font-size: 2rem;
-    line-height: 2.938rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
   }
   #home .home-download-btn .btn {
     margin: 0;
   }
   .home-image {
     text-align: center;
-    height: 350px;
+    /* height: 350px; */
   }
 
   /* ==== counter css ==== */

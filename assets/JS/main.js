@@ -15,11 +15,11 @@ function navMenu(){
         // apply transition
         if(scroll >= 250){
             navBar.classList.add("navbar-sticky-transitioned");
-            // scrollTopButton.classList.add("scrollActive");
+            scrollTopButton.classList.add("scrollActive");
         }
         else{
             navBar.classList.remove("navbar-sticky-transitioned");
-            // scrollTopButton.classList.remove("scrollActive");
+            scrollTopButton.classList.remove("scrollActive");
         }
 
         // sticky on
@@ -53,4 +53,39 @@ document.addEventListener("DOMContentLoaded", () =>{
     counter("count2",100,20,3000);
     counter("count3",0,30,4000);
     counter("count4",0,10,2000);
+})
+
+// app screen
+
+var swiper = new Swiper('.swiper-container.app-screen', {
+    effect: 'coverflow',
+    loop: true,
+    autoplaySpeed: 3000,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 5000,
+        disableOneInteraction: false
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    paginationClickable: true,
+    coverflow: {
+        rotate: 0,
+        stretch: 100,
+        depth: 150,
+        modifier: 1.5,
+        slideShadows: false,
+    }
+})
+
+// side navigation bar close while we click on navigation links
+let navBar = document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function (a) {
+    a.addEventListener("click", function () {
+        navCollapse.classList.remove("show");
+    })
 })
