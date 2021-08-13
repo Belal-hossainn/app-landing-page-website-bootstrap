@@ -22,12 +22,12 @@
   .navbar-brand {
     width: 50%;
   }
-  
-  .navbar-brand .name{
+
+  .navbar-brand .name {
     font-size: 1rem;
     color: #814096;
   }
-  .name span{
+  .name span {
     color: var(--text-light-pink);
   }
   .navbar-toggler {
@@ -57,9 +57,8 @@
   /* ===== HOME =========== */
   #home {
     padding-top: 7rem;
-    background-position:  top right;
-    background-size:inherit;
-    
+    background-position: top right;
+    background-size: inherit;
   }
   #home .row {
     flex-direction: column-reverse;
@@ -73,7 +72,6 @@
   }
   .home-image {
     text-align: center;
-    
   }
   .home-image img {
     max-width: 70%;
@@ -81,8 +79,16 @@
   }
 
   /*  pricing css */
-  .single_price{
+  .single_price {
     margin-bottom: 2.5rem;
+  }
+
+  /* testimonial css */
+  .testimonial .carousel-control-prev {
+    left: -1.75rem;
+  }
+  .testimonial .carousel-control-next {
+    right: -1.75rem;
   }
 }
 
@@ -95,8 +101,8 @@
   /* ==== HOME CSS========  */
   #home {
     padding-top: 5rem;
-    background-position:  top;
-    background-position:contain;
+    background-position: top;
+    background-position: contain;
   }
   #home .home_text {
     text-align: center;
@@ -132,7 +138,14 @@
     text-align: center;
     padding-top: 1.5rem;
   }
-  .feature_img img{
-      max-width: 95%;
+  .feature_img img {
+    max-width: 95%;
+  }
+  .testimonial .testimonial-wrapper{
+    padding: 1rem;
+  }
+  .testimonial .carousel-control-prev,
+  .testimonial .carousel-control-next {
+    display: none;
   }
 }

@@ -603,6 +603,67 @@ img{
 }
 
 /* ================
+10.0: testimonial CSS
+===================== */
+.testimonial{
+    padding: 3rem 0 7rem;
+}
+.testimonial .testimonial-wrapper{
+    box-shadow: 0 0 0.563rem 0 rgb(0 0 0 / 5%);
+    background: #fff;
+    margin: auto;
+    border: 0.063rem solid #f5f5f5;
+    border-radius: 0.625rem;
+}
+.testimonial .testimonial-wrapper img{
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    margin: 1.25rem auto;
+    object-fit: cover;
+    background-color: var(--bg-white);
+    border: 0.063rem solid #f5f5f5;
+}
+.testimonial .testimonial-wrapper h6{
+    font-weight: 400;
+    color: var(--text-light-black);
+}
+.testimonial .testimonial-wrapper span{
+    color: var(--text-light-gray);
+    font-size: 1rem;
+    margin: .8rem 0;
+    display: block;
+}
+.testimonial .testimonial-wrapper p{
+    color: var(--text-light-gray);
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding-bottom: 0.5rem;
+} 
+.testimonial .carousel-indicators [data-bs-target]{
+    background-color: var(--bg-light-pink);
+    width: 2.5rem;
+    height: 0.313rem;
+}
+.testimonial .carousel-indicators{
+    bottom: -3rem;
+}
+.testimonial .carousel-control-prev-icon,
+.testimonial .carousel-control-next-icon{
+    background: transparent;
+}
+.testimonial .slider-icon{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--bg-light-pink);
+}
+.testimonial .carousel-control-prev{
+    left: -8.75rem
+}
+.testimonial .carousel-control-next{
+    right: -8.75rem
+}
+/* ================
 10.0: Contact CSS
 ===================== */
 .contact{
